@@ -92,9 +92,10 @@ export default function App() {
               </span>
             </h1>
 
-            <p className="mt-6 text-lg text-slate-600 max-w-xl">
-              Clear, independent insurance guidance for individuals, families, and business owners.
-            </p>
+         <p className="mt-6 text-lg text-slate-600 max-w-xl">
+  Lendo Scott provides clear, independent insurance guidance for individuals,
+  families, and business owners — without call centers or corporate scripts.
+</p>
 
             <div className="mt-8 flex gap-4 flex-wrap">
               <a href="#contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2">
@@ -159,6 +160,33 @@ export default function App() {
             ))}
           </div>
         </div>
+        <section className="py-24 bg-slate-50">
+  <div className="max-w-4xl mx-auto px-6">
+    <h2 className="text-3xl font-semibold mb-6">
+      Common Insurance Questions, Answered Simply
+    </h2>
+
+    <div className="space-y-6 text-slate-700">
+      <p>
+        <strong>Do I really need life insurance?</strong><br />
+        Life insurance is designed to protect income, family stability,
+        and long-term financial goals — not just cover funeral costs.
+      </p>
+
+      <p>
+        <strong>Should I buy insurance through a company or an advisor?</strong><br />
+        An independent advisor compares multiple options and explains trade-offs,
+        rather than promoting a single company’s product.
+      </p>
+
+      <p>
+        <strong>How much coverage is enough?</strong><br />
+        Coverage depends on income, debts, dependents, and future plans.
+        There is no one-size-fits-all answer.
+      </p>
+    </div>
+  </div>
+</section>
       </section>
 
       {/* CONTACT / GHL */}
