@@ -56,7 +56,9 @@ export default function App() {
       {/* NAVBAR */}
       <nav className={`fixed top-0 w-full z-50 ${scrolled ? "bg-white border-b border-slate-200" : "bg-transparent"}`}>
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="font-semibold text-xl">SV Code Advisory</div>
+          <div className="font-semibold text-xl">
+  By: 12 Stone <span className="text-slate-500 font-normal">— Smart Website™</span>
+</div>
 
           <div className="hidden md:flex gap-8 items-center text-sm font-medium">
             <a href="#about" className="hover:text-blue-600">About</a>
@@ -91,16 +93,26 @@ export default function App() {
                 Supported by Modern Intelligence
               </span>
             </h1>
+            <p className="mt-3 text-sm text-slate-500">
+  This is a demo example of a personalized Smart Website designed for modern insurance professionals.
+</p>
 
-         <p className="mt-6 text-lg text-slate-600 max-w-xl">
-  Lendo Scott provides clear, independent insurance guidance for individuals,
-  families, and business owners — without call centers or corporate scripts.
+      <p className="mt-6 text-lg text-slate-600 max-w-xl">
+  A professional online presence designed to help insurance professionals
+  build trust, explain complex topics clearly, and engage clients with confidence.
 </p>
 
             <div className="mt-8 flex gap-4 flex-wrap">
-              <a href="#contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg flex items-center gap-2">
-                Book a Consultation <ArrowRight size={18} />
-              </a>
+              <a
+  href="#contact"
+  className="inline-flex items-center justify-center
+             bg-blue-600 hover:bg-blue-700
+             text-white font-medium
+             px-6 py-3 rounded-lg
+             transition-colors duration-200"
+>
+  Book a Smart Website Walkthrough for Your Brand
+</a>
 
               <a href="tel:5551234567" className="border border-slate-300 px-6 py-3 rounded-lg flex items-center gap-2">
                 <Phone size={18} /> Speak With an Advisor
@@ -117,20 +129,86 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* AGENT MIRROR SECTION */}
+<section className="py-24 bg-white">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+    <h2 className="text-4xl font-semibold mb-6">
+      Designed for Insurance Professionals Who Want to Stand Out
+    </h2>
+
+    <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-12">
+      This Smart Website is built to showcase <strong>you</strong> — your expertise,
+      your approach, and your professionalism — not a generic corporate brand.
+      It’s designed to help clients understand, trust, and engage with you
+      before they ever pick up the phone.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8 text-left">
+      <div className="border border-slate-200 rounded-xl p-6">
+        <h3 className="font-semibold text-lg mb-2">
+          Your Personal Brand Comes First
+        </h3>
+        <p className="text-slate-600">
+          Your name, your voice, and your approach — not a crowded corporate website
+          shared with hundreds of other agents.
+        </p>
+      </div>
+
+      <div className="border border-slate-200 rounded-xl p-6">
+        <h3 className="font-semibold text-lg mb-2">
+          Clear, Professional Messaging
+        </h3>
+        <p className="text-slate-600">
+          Built to explain complex insurance topics in a calm, confident way
+          that positions you as a trusted advisor — not a salesperson.
+        </p>
+      </div>
+
+      <div className="border border-slate-200 rounded-xl p-6">
+        <h3 className="font-semibold text-lg mb-2">
+          Modern Tools, Human Experience
+        </h3>
+        <p className="text-slate-600">
+          A modern online presence that works for you 24/7,
+          while still feeling personal, approachable, and professional.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section className="py-16 bg-slate-50">
+  <div className="max-w-4xl mx-auto px-6 text-center">
+   <p className="text-lg text-slate-700">
+  Imagine this website with <strong>your name</strong>, your photo,
+  your phone number, and your services — built around
+  <strong> how you work </strong> with your clients.
+</p>
+  </div>
+</section>
 
       {/* ABOUT */}
       <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <img
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80"
-            className="rounded-2xl shadow-lg"
-            alt="Advisor"
-          />
+  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80"
+  className="rounded-2xl shadow-lg"
+  alt="Independent Insurance Advisor"
+ />
           <div>
-            <h2 className="text-4xl font-semibold">Independent Advice. Trusted Guidance.</h2>
-            <p className="mt-4 text-slate-600 text-lg">
-              Education-first insurance guidance with no pressure or corporate scripts.
-            </p>
+          <h2 className="text-4xl font-semibold">
+  Built Around the Insurance Professional — Not a Corporate Brand
+</h2>
+           <p className="mt-4 text-slate-600 text-lg">
+  This Smart Website is designed for insurance professionals who want
+  a clean, modern online presence that reflects their experience,
+  their values, and the way they actually work with clients —
+  not a one-size-fits-all corporate website.
+</p>
+<p className="mt-4 text-slate-600 text-lg">
+  It gives you a professional foundation you can personalize with
+  your name, photo, services, and contact information —
+  so prospects experience <strong>you</strong> before the first conversation.
+</p>
           </div>
         </div>
       </section>
