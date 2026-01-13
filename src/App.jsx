@@ -1,3 +1,4 @@
+import { agent } from "./config/agent";
 import React, { useState, useEffect } from "react";
 import {
   Menu,
@@ -93,8 +94,8 @@ export default function App() {
                 Supported by Modern Intelligence
               </span>
             </h1>
-            <p className="mt-3 text-sm text-slate-500">
-  This is a demo example of a personalized Smart Website designed for modern insurance professionals.
+            <p className="mt-4 text-xl text-slate-600">
+  With {agent.name}, {agent.title}
 </p>
 
       <p className="mt-6 text-lg text-slate-600 max-w-xl">
@@ -186,33 +187,60 @@ export default function App() {
   </div>
 </section>
 
-      {/* ABOUT */}
-      <section id="about" className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-          <img
-  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1200&q=80"
-  className="rounded-2xl shadow-lg"
-  alt="Independent Insurance Advisor"
- />
-          <div>
-          <h2 className="text-4xl font-semibold">
-  Built Around the Insurance Professional — Not a Corporate Brand
-</h2>
-           <p className="mt-4 text-slate-600 text-lg">
-  This Smart Website is designed for insurance professionals who want
-  a clean, modern online presence that reflects their experience,
-  their values, and the way they actually work with clients —
-  not a one-size-fits-all corporate website.
-</p>
-<p className="mt-4 text-slate-600 text-lg">
-  It gives you a professional foundation you can personalize with
-  your name, photo, services, and contact information —
-  so prospects experience <strong>you</strong> before the first conversation.
-</p>
-          </div>
-        </div>
-      </section>
+      {/* ================= ABOUT ================= */}
+<section id="about" className="py-32 bg-slate-50">
+  <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+    
+    {/* Agent Image */}
+    <img
+      src={agent.photo}
+      alt={agent.name}
+      className="rounded-2xl shadow-lg"
+    />
 
+    {/* Agent Identity Block */}
+    <div>
+      <h3 className="text-3xl font-semibold text-slate-900">
+        {agent.name}
+      </h3>
+
+      <p className="text-lg text-slate-700 mt-3 max-w-md">
+        A client-first insurance professional focused on clarity, protection,
+        and long-term confidence — not corporate scripts.
+      </p>
+
+      <p className="text-sm text-slate-500 mt-2">
+        Independent | Personalized guidance | Modern approach
+      </p>
+
+      {/* Primary CTAs */}
+      <div className="mt-6 flex flex-wrap gap-4">
+        <a
+          href={`tel:${agent.phone.replace(/\D/g, "")}`}
+          className="inline-flex items-center justify-center
+                     bg-blue-600 hover:bg-blue-700
+                     text-white font-medium
+                     px-6 py-3 rounded-lg
+                     transition-colors duration-200"
+        >
+          Call {agent.name}
+        </a>
+
+        <a
+          href="#contact"
+          className="inline-flex items-center justify-center
+                     border border-slate-300
+                     text-slate-700 hover:text-slate-900
+                     px-6 py-3 rounded-lg
+                     transition-colors duration-200"
+        >
+          Book a Smart Website Walkthrough
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
       {/* SERVICES */}
       <section id="services" className="py-24 bg-slate-50">
         <div className="max-w-7xl mx-auto px-6">
@@ -273,6 +301,22 @@ export default function App() {
           <h2 className="text-4xl font-semibold text-center mb-12">
             Schedule a Conversation
           </h2>
+<div className="mb-8 text-center">
+  <h3 className="text-3xl font-semibold text-slate-900">
+    Connect with {agent.name}
+  </h3>
+
+  <p className="text-slate-600 mt-2">
+    {agent.title}
+  </p>
+
+  <a
+    href={`tel:${agent.phone.replace(/\D/g, "")}`}
+    className="inline-block mt-4 text-lg font-medium text-blue-600"
+  >
+    Call {agent.phone}
+  </a>
+</div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="border border-slate-200 rounded-xl p-8 text-center">
@@ -289,6 +333,11 @@ export default function App() {
           </div>
         </div>
       </section>
+      <p className="max-w-2xl mx-auto text-slate-600 text-center mb-8">
+  This Smart Website is designed to reflect how you work, how clients reach you,
+  and how your brand shows up online — without relying on a corporate template.
+</p>
+
 
       {/* FOOTER */}
       <footer className="py-16 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
