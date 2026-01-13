@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { agent } from "./config/agent";
 import {
   Menu,
@@ -13,6 +14,7 @@ import {
   Award,
   CheckCircle,
 } from "lucide-react";
+
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -64,7 +66,12 @@ export default function App() {
           <div className="hidden md:flex gap-8 items-center text-sm font-medium">
             <a href="#about" className="hover:text-blue-600">About</a>
             <a href="#services" className="hover:text-blue-600">Services</a>
-            <a href="/book" className="hover:text-blue-600">Contact</a>
+            <Link
+  to="/book"
+  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
+>
+  Book a Smart Website Walkthrough
+</Link>
             <a
               href={`tel:${agent.phone.replace(/\D/g, "")}`}
               className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2"
@@ -109,12 +116,12 @@ export default function App() {
             </p>
 
             <div className="mt-8 flex gap-4 flex-wrap">
-           <a
-  href="/book"
-  className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
+     <Link
+  to="/book"
+  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
 >
-  Book a Smart Website Walkthrough for Your Brand
-</a>
+  Book a Smart Website Walkthrough
+</Link>
               <a
                 href={`tel:${agent.phone.replace(/\D/g, "")}`}
                 className="border border-slate-300 px-6 py-3 rounded-lg flex items-center gap-2"
@@ -157,12 +164,12 @@ export default function App() {
                 Call {agent.name}
               </a>
 
-              <a
-  href="/book"
-  className="border px-6 py-3 rounded-lg"
+              <Link
+  to="/book"
+  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
 >
-  Walkthrough
-</a>
+  Book a Smart Website Walkthrough
+</Link>
             </div>
           </div>
         </div>
@@ -207,15 +214,12 @@ export default function App() {
       {agent.title}
     </p>
 
-    <a
-      href="/book"
-      className="inline-block mt-4
-                 bg-blue-600 hover:bg-blue-700
-                 text-white font-medium
-                 px-6 py-3 rounded-lg"
-    >
-      Book a Smart Website Walkthrough
-    </a>
+   <Link
+  to="/book"
+  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
+>
+  Book a Smart Website Walkthrough
+</Link>
 
     <p className="mt-4 text-sm text-slate-500">
       Or call directly:{" "}
