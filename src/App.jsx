@@ -75,12 +75,13 @@ export default function App() {
           <div className="hidden md:flex gap-8 items-center text-sm font-medium">
             <a href="#about" className="hover:text-blue-600">About</a>
             <a href="#services" className="hover:text-blue-600">Services</a>
-            <Link
-  to="/book"
-  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
+   <a
+  href="/book"
+  className="text-blue-600 hover:text-blue-700 font-medium"
 >
-  Book a Smart Website Walkthrough
-</Link>
+  Book Walkthrough
+</a>
+
             <a
               href={`tel:${agent.phone.replace(/\D/g, "")}`}
               className="bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-2"
@@ -209,9 +210,27 @@ export default function App() {
     The goal is simple: help clients feel informed, comfortable,
     and confident before they ever schedule a call.
   </p>
+<a
+  href="/book"
+  className="inline-flex items-center justify-center
+             bg-blue-600 hover:bg-blue-700
+             text-white font-medium
+             px-6 py-3 rounded-md
+             transition-colors duration-200"
+>
+  Schedule a Smart Website Walkthrough
+</a>
+  <a
+  href={`tel:${agent.phone.replace(/\D/g, "")}`}
+  className="inline-flex items-center justify-center
+             border border-slate-300
+             text-slate-700 hover:text-slate-900
+             px-6 py-3 rounded-md
+             transition-colors duration-200"
+>
+  Call {agent.name}
+</a>
 
-
-  
             </div>
           </div>
         </div>
