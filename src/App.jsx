@@ -109,15 +109,16 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
           <div>
             <h1 className="text-5xl md:text-6xl font-semibold leading-tight">
-              Personal Insurance Advice
-              <span className="block text-slate-600 font-normal mt-2">
-                Supported by Modern Intelligence
-              </span>
-            </h1>
+  A Smart Website Built for Insurance Professionals
+  <span className="block text-slate-600 font-normal mt-2">
+    Not a corporate template — built around <strong>you</strong>
+  </span>
+</h1>
 
-            <p className="mt-4 text-xl text-slate-600">
-              With {agent.name}, {agent.title}
-            </p>
+           <p className="mt-4 text-xl text-slate-600">
+  See how your name, your services, and your workflow
+  can be presented professionally — without relying on an IMO website.
+</p>
 
             <p className="mt-6 text-lg text-slate-600 max-w-xl">
               A professional online presence designed to help insurance professionals
@@ -129,15 +130,18 @@ export default function App() {
 
             <div className="mt-8 flex flex-col items-center gap-4">
   <a
-    href="/book"
-    className="inline-flex items-center justify-center
-               bg-blue-600 hover:bg-blue-700
-               text-white font-medium
-               px-8 py-4 rounded-lg
-               transition-colors duration-200"
-  >
-    Schedule a Smart Website Walkthrough
-  </a>
+  href="/book"
+  className="inline-flex items-center justify-center
+             bg-blue-600 hover:bg-blue-700
+             text-white font-medium
+             px-8 py-4 rounded-lg
+             transition-colors duration-200"
+>
+  See How This Would Look for Your Brand
+</a>
+<p className="mt-3 text-sm text-slate-500">
+  No obligation. Just a quick walkthrough of what’s possible.
+</p>
 
   <a
     href={`tel:${agent.phone.replace(/\D/g, "")}`}
