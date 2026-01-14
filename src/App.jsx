@@ -182,28 +182,36 @@ export default function App() {
 
           <div>
             <h3 className="text-3xl font-semibold">{agent.name}</h3>
-            <p className="mt-3 text-slate-700">
-              A client-first insurance professional focused on clarity,
-              protection, and long-term confidence — not corporate scripts.
-            </p>
-            <p className="text-sm text-slate-500 mt-2">
-              Independent | Personalized guidance | Modern approach
-            </p>
+           <p className="text-lg text-slate-700 mt-3 max-w-md">
+  An independent insurance professional who focuses on clarity,
+  protection, and long-term confidence — not corporate scripts
+  or one-size-fits-all advice.
+</p>
 
-            <div className="mt-6 flex gap-4">
-              <a
-                href={`tel:${agent.phone.replace(/\D/g, "")}`}
-                className="bg-blue-600 text-white px-6 py-3 rounded-lg"
-              >
-                Call {agent.name}
-              </a>
+<p className="text-sm text-slate-500 mt-2">
+  Independent | Client-first | Modern approach
+</p>
 
-              <Link
-  to="/book"
-  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
->
-  Book a Smart Website Walkthrough
-</Link>
+<div className="mt-8 max-w-xl space-y-4 text-slate-600">
+  <p>
+    This Smart Website is designed to support how insurance professionals
+    actually work — educating clients, answering real questions, and
+    building trust before the first conversation.
+  </p>
+
+  <p>
+    Instead of directing prospects to a generic corporate or IMO website,
+    this platform keeps the focus on <strong>you</strong> — your name,
+    your expertise, and your process.
+  </p>
+
+  <p>
+    The goal is simple: help clients feel informed, comfortable,
+    and confident before they ever schedule a call.
+  </p>
+
+
+  
             </div>
           </div>
         </div>
