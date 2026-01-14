@@ -114,21 +114,29 @@ export default function App() {
               A professional online presence designed to help insurance professionals
               build trust, explain complex topics clearly, and engage clients with confidence.
             </p>
+            <p className="mt-4 text-sm text-slate-500">
+  ✔ Clients can book appointments online • ✔ Works 24/7 • ✔ No corporate branding
+</p>
 
-            <div className="mt-8 flex gap-4 flex-wrap">
-     <Link
-  to="/book"
-  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
->
-  Book a Smart Website Walkthrough
-</Link>
-              <a
-                href={`tel:${agent.phone.replace(/\D/g, "")}`}
-                className="border border-slate-300 px-6 py-3 rounded-lg flex items-center gap-2"
-              >
-                <Phone size={18} /> Speak With an Advisor
-              </a>
-            </div>
+            <div className="mt-8 flex flex-col items-center gap-4">
+  <a
+    href="/book"
+    className="inline-flex items-center justify-center
+               bg-blue-600 hover:bg-blue-700
+               text-white font-medium
+               px-8 py-4 rounded-lg
+               transition-colors duration-200"
+  >
+    Schedule a Smart Website Walkthrough
+  </a>
+
+  <a
+    href={`tel:${agent.phone.replace(/\D/g, "")}`}
+    className="text-slate-600 hover:text-slate-900 text-sm"
+  >
+    Or call {agent.name} directly
+  </a>
+</div>
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-6">
@@ -214,22 +222,28 @@ export default function App() {
       {agent.title}
     </p>
 
-   <Link
-  to="/book"
-  className="bg-blue-600 text-white px-6 py-3 rounded-lg"
->
-  Book a Smart Website Walkthrough
-</Link>
+  
 
-    <p className="mt-4 text-sm text-slate-500">
-      Or call directly:{" "}
-      <a
-        href={`tel:${agent.phone.replace(/\D/g, "")}`}
-        className="text-blue-600 font-medium"
-      >
-        {agent.phone}
-      </a>
-    </p>
+    <div className="mt-8 flex flex-col items-center gap-4">
+  <a
+    href="/book"
+    className="inline-flex items-center justify-center
+               bg-blue-600 hover:bg-blue-700
+               text-white font-medium
+               px-8 py-4 rounded-lg
+               transition-colors duration-200"
+  >
+    Schedule a Smart Website Walkthrough
+  </a>
+
+  <a
+    href={`tel:${agent.phone.replace(/\D/g, "")}`}
+    className="text-slate-600 hover:text-slate-900 text-sm"
+  >
+    Or call {agent.name} directly
+  </a>
+</div>
+
 
   </div>
 </section>

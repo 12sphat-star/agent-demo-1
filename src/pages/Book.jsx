@@ -21,14 +21,20 @@ export default function Book() {
             customized for your business.
           </p>
 
-          {/* GHL INLINE FORM */}
-          <div className="bg-white rounded-2xl shadow-md p-6">
-            <iframe
-              src="https://api.leadconnectorhq.com/widget/form/PRHNF7z18uPZcNa07ofM"
-              style={{ width: "100%", height: "950px", border: "none" }}
-              title="Agent Website Walkthrough Request"
-            />
-          </div>
+  {/* GHL BOOKING CALENDAR */}
+<div className="max-w-3xl mx-auto">
+  <iframe
+    src="https://api.leadconnectorhq.com/widget/booking/Ag1H6yuBP7fTkgqLqeBM"
+    style={{
+      width: "100%",
+      height: "560px",
+      border: "none",
+      borderRadius: "12px"
+    }}
+    title="Schedule a Smart Website Walkthrough"
+  />
+</div>
+
 
           <p className="text-sm text-slate-500 mt-6">
             Prefer to talk now?{" "}
