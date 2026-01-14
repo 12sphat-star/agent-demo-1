@@ -325,10 +325,22 @@ export default function App() {
 </section>
 
 {/* FOOTER */}
-<footer className="py-16 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
-  <p>SV Code Advisory — Independent Insurance Guidance</p>
-  <p className="mt-2">Coverage subject to underwriting.</p>
+<footer className="py-12 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
+  <p className="font-medium text-slate-600">
+    © {new Date().getFullYear()} 12 Stone Agency
+  </p>
+
+  <p className="mt-1">
+    Smart Website™ — Built for Independent Insurance Professionals
+  </p>
+
+  <p className="mt-3 text-xs text-slate-400 max-w-xl mx-auto">
+    This website is a demonstration of the Smart Website platform.
+    Coverage options, availability, and advice vary by advisor and carrier.
+    No insurance coverage is bound through this site.
+  </p>
 </footer>
+
 {/* AI Assistant Button */}
 <div
   className="fixed bottom-6 right-6 bg-white border border-slate-200
