@@ -35,32 +35,32 @@ export default function App() {
   return () => window.removeEventListener("scroll", onScroll);
 }, []);
 
-  const services = [
-    {
-      icon: <Shield />,
-      title: "Business Insurance",
-      text: "Independent guidance to protect your company and operations.",
-      items: ["General Liability", "Workers Comp", "Property", "Professional Liability"],
-    },
-    {
-      icon: <Users />,
-      title: "Life & Health",
-      text: "Coverage strategies built around your family’s needs.",
-      items: ["Term Life", "Whole Life", "Health Plans", "Disability"],
-    },
-    {
-      icon: <Briefcase />,
-      title: "Commercial Auto",
-      text: "Protection for business vehicles and fleets.",
-      items: ["Fleet Coverage", "Cargo", "Liability", "Physical Damage"],
-    },
-    {
-      icon: <Award />,
-      title: "Specialty Coverage",
-      text: "Solutions for complex risks and professional exposure.",
-      items: ["Cyber", "E&O", "Umbrella", "Bonds"],
-    },
-  ];
+const services = [
+  {
+    icon: <Shield />,
+    title: "Business Insurance",
+    text: "Independent guidance to protect your company, operations, and risk exposure.",
+    items: ["General Liability", "Workers Comp", "Property", "Professional Liability"]
+  },
+  {
+    icon: <Users />,
+    title: "Life & Health",
+    text: "Coverage strategies built around families, income protection, and long-term needs.",
+    items: ["Term Life", "Whole Life", "Health Plans", "Disability"]
+  },
+  {
+    icon: <Briefcase />,
+    title: "Commercial Auto",
+    text: "Protection for business vehicles, drivers, and fleet operations.",
+    items: ["Fleet Coverage", "Cargo", "Liability", "Physical Damage"]
+  },
+  {
+    icon: <Award />,
+    title: "Specialty Coverage",
+    text: "Solutions for complex risks and professional responsibilities.",
+    items: ["Cyber", "E&O", "Umbrella", "Bonds"]
+  }
+];
 
   return (
     <div className="bg-slate-50 text-slate-900">
@@ -289,7 +289,9 @@ export default function App() {
   className="bg-white rounded-xl border border-slate-200 p-6
              hover:shadow-lg transition-shadow duration-200"
 >
-                <div className="text-blue-600 mb-4">{s.icon}</div>
+                <div className="text-blue-600 mb-4 opacity-90">
+  {React.cloneElement(s.icon, { size: 28 })}
+</div>
                 <h3 className="font-semibold text-lg mb-2">{s.title}</h3>
                 <div className="w-10 h-1 bg-blue-600 rounded-full mb-3"></div>
                 <p className="text-slate-600 text-sm mb-4">{s.text}</p>
