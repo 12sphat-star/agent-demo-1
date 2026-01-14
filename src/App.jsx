@@ -148,11 +148,11 @@ export default function App() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-6">
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
-              className="rounded-xl"
-              alt="Advisory"
-            />
+           <img
+  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+  className="rounded-xl"
+  alt="Advisory"
+/>
           </div>
         </div>
       </section>
