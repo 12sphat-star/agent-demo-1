@@ -361,17 +361,30 @@ const services = [
   </p>
 </footer>
 
-{/* AI Assistant Button */}
-<div
-  className="fixed bottom-6 right-6 bg-white border border-slate-200
-             shadow-lg rounded-full p-4 z-50 cursor-pointer
-             hover:shadow-xl transition"
-  onClick={() => {
-    window.open("/book", "_self");
-  }}
->
-  <MessageSquare className="text-blue-600" />
+{/* FLOATING AI ASSISTANT (DEMO MODE) */}
+<div className="fixed bottom-6 right-6 z-50">
+  <a
+    href="/book"
+    className="bg-white border border-slate-200 shadow-lg
+               rounded-full p-4 flex items-center justify-center
+               hover:bg-slate-50 transition-colors duration-200"
+    aria-label="AI Assistant – Schedule a Smart Website Walkthrough"
+  >
+    <MessageSquare className="text-blue-600" />
+  </a>
 </div>
-    </div>
+{/* FLOATING AI ASSISTANT (DEMO MODE) */}
+<div className="fixed bottom-6 right-6 z-50">
+  <a
+    href="/book"
+    className="bg-white border border-slate-200 shadow-lg
+               rounded-full p-4 flex items-center justify-center
+               hover:bg-slate-50 transition-colors duration-200"
+    aria-label="AI Assistant – Schedule a Smart Website Walkthrough"
+  >
+    <MessageSquare className="text-blue-600" />
+  </a>
+</div>
+</div>
   );
 }
