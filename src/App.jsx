@@ -19,12 +19,20 @@ import {
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [showAI, setShowAI] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const onScroll = () => {
+    setScrolled(window.scrollY > 40);
+
+    if (window.scrollY > 600) {
+      setShowAI(true);
+    }
+  };
+
+  window.addEventListener("scroll", onScroll);
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
 
   const services = [
     {
@@ -224,42 +232,44 @@ export default function App() {
 
   
 
-    <div className="mt-8 flex flex-col items-center gap-4">
+   <div className="flex gap-4 justify-center flex-wrap">
+  {/* PRIMARY CTA */}
   <a
     href="/book"
-    className="inline-flex items-center justify-center
-               bg-blue-600 hover:bg-blue-700
-               text-white font-medium
-               px-8 py-4 rounded-lg
-               transition-colors duration-200"
+    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium"
   >
-    Schedule a Smart Website Walkthrough
+    Book a Smart Website Walkthrough
   </a>
 
+  {/* SECONDARY CTA */}
   <a
     href={`tel:${agent.phone.replace(/\D/g, "")}`}
-    className="text-slate-600 hover:text-slate-900 text-sm"
+    className="border border-slate-300 px-6 py-3 rounded-lg text-slate-700 font-medium"
   >
-    Or call {agent.name} directly
+    Call {agent.name}
   </a>
-</div>
-
+  </div>
 
   </div>
 </section>
 
+{/* FOOTER */}
+<footer className="py-16 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
+  <p>SV Code Advisory — Independent Insurance Guidance</p>
+  <p className="mt-2">Coverage subject to underwriting.</p>
+</footer>
 
-      {/* FOOTER */}
-      <footer className="py-16 bg-slate-50 border-t border-slate-200 text-center text-sm text-slate-500">
-        <p>SV Code Advisory — Independent Insurance Guidance</p>
-        <p className="mt-2">Coverage subject to underwriting.</p>
-      </footer>
+{/* AI ASSISTANT (scroll triggered) */}
+{showAI && (
+  <div
+    className="fixed bottom-6 right-6 bg-white border border-slate-200
+               shadow-lg rounded-xl p-4 z-50 cursor-pointer"
+  >
+    <MessageSquare className="text-blue-600" />
+  </div>
+)}
 
-      {/* AI CHAT */}
-      <div className="fixed bottom-6 right-6 bg-white border border-slate-200 shadow-lg rounded-full p-4">
-        <MessageSquare className="text-blue-600" />
-      </div>
-    </div>
-  );
+</div>
+);
 }
 
