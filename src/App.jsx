@@ -1,3 +1,4 @@
+import AIAssistant from "./components/AIAssistant";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { agent } from "./config/agent";
@@ -258,18 +259,17 @@ export default function App() {
   <p>SV Code Advisory — Independent Insurance Guidance</p>
   <p className="mt-2">Coverage subject to underwriting.</p>
 </footer>
-
-{/* AI ASSISTANT (scroll triggered) */}
-{showAI && (
-  <div
-    className="fixed bottom-6 right-6 bg-white border border-slate-200
-               shadow-lg rounded-xl p-4 z-50 cursor-pointer"
-  >
-    <MessageSquare className="text-blue-600" />
-  </div>
-)}
-
+{/* AI Assistant Button */}
+<div
+  className="fixed bottom-6 right-6 bg-white border border-slate-200
+             shadow-lg rounded-full p-4 z-50 cursor-pointer
+             hover:shadow-xl transition"
+  onClick={() => {
+    window.open("/book", "_self");
+  }}
+>
+  <MessageSquare className="text-blue-600" />
 </div>
-);
+    </div>
+  );
 }
-
