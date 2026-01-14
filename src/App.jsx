@@ -165,13 +165,22 @@ export default function App() {
 
         </div>
       </section>
-{/* TRUST STRIP */}
-<section className="py-8 bg-slate-50 border-t border-b border-slate-200">
-  <div className="max-w-6xl mx-auto px-6 text-center">
-    <p className="text-lg text-slate-700 max-w-4xl mx-auto">
-      This Smart Website is built to help insurance professionals present
-      themselves clearly, professionally, and confidently — before a
-      conversation ever begins.
+{/* BRIDGE SECTION */}
+<section className="py-20 bg-white border-t border-slate-200">
+  <div className="max-w-5xl mx-auto px-6 text-center">
+    <h2 className="text-3xl md:text-4xl font-semibold text-slate-900">
+      Built for Independent Insurance Professionals — Not Corporate Scripts
+    </h2>
+
+    <p className="mt-4 text-lg text-slate-600 max-w-3xl mx-auto">
+      A modern, personal online presence designed to reflect how you actually
+      work with clients.
+    </p>
+
+    <p className="mt-6 text-slate-600 max-w-3xl mx-auto">
+      This Smart Website helps prospects understand your approach, build trust,
+      and feel confident before ever picking up the phone or scheduling a
+      conversation.
     </p>
   </div>
 </section>
@@ -179,7 +188,11 @@ export default function App() {
       {/* ABOUT */}
       <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-          <img src={agent.photo} alt={agent.name} className="rounded-2xl shadow-lg" />
+  <img
+  src="/images/about-consultation.jpg"
+  alt="Independent insurance advisor consulting with client"
+  className="w-full max-w-md mx-auto rounded-2xl shadow-lg"
+/>
 
           <div>
             <h3 className="text-3xl font-semibold">{agent.name}</h3>
@@ -215,7 +228,7 @@ export default function App() {
   className="inline-flex items-center justify-center
              bg-blue-600 hover:bg-blue-700
              text-white font-medium
-             px-6 py-3 rounded-md
+            px-5 py-2.5 text-sm rounded-md
              transition-colors duration-200"
 >
   Schedule a Smart Website Walkthrough
@@ -225,7 +238,7 @@ export default function App() {
   className="inline-flex items-center justify-center
              border border-slate-300
              text-slate-700 hover:text-slate-900
-             px-6 py-3 rounded-md
+             px-5 py-2.5 text-sm rounded-md
              transition-colors duration-200"
 >
   Call {agent.name}
