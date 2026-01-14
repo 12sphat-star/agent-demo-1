@@ -152,21 +152,31 @@ export default function App() {
 </div>
           </div>
 
-         <div className="mt-12 flex justify-center">
- <img
-  src="/images/hero-advisor.jpg"
-  alt="Independent Insurance Professional"
-  className="rounded-xl shadow-lg max-w-2xl w-full object-cover mx-auto"
- />
 
-
+         <div className="bg-white rounded-2xl shadow-xl p-6 flex justify-center">
+  <img
+    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80"
+    className="rounded-xl w-3/4 max-w-md"
+    alt="Insurance professional at work"
+  />
 </div>
+
 
         </div>
       </section>
+{/* TRUST STRIP */}
+<section className="py-8 bg-slate-50 border-t border-b border-slate-200">
+  <div className="max-w-6xl mx-auto px-6 text-center">
+    <p className="text-lg text-slate-700 max-w-4xl mx-auto">
+      This Smart Website is built to help insurance professionals present
+      themselves clearly, professionally, and confidently — before a
+      conversation ever begins.
+    </p>
+  </div>
+</section>
 
       {/* ABOUT */}
-      <section id="about" className="py-32 bg-white">
+      <section id="about" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
           <img src={agent.photo} alt={agent.name} className="rounded-2xl shadow-lg" />
 
@@ -198,6 +208,32 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* WHY THIS WEBSITE */}
+<section className="py-16 bg-white">
+  <div className="max-w-5xl mx-auto px-6 text-center">
+    <h2 className="text-3xl font-semibold mb-6">
+      Why This Smart Website Works
+    </h2>
+
+    <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+      This Smart Website is designed to reflect how an independent insurance
+      professional actually works — educating clients, building trust, and
+      guiding decisions without pressure.
+    </p>
+
+    <p className="text-lg text-slate-600 max-w-3xl mx-auto mt-6">
+      Instead of sending prospects to a generic corporate or IMO website, this
+      platform puts <strong>you</strong> at the center of the experience — your
+      name, your services, your explanations, and your workflow.
+    </p>
+
+    <p className="text-lg text-slate-600 max-w-3xl mx-auto mt-6">
+      The result is a clean, modern online presence that helps clients feel
+      confident before they ever pick up the phone or schedule a conversation.
+    </p>
+  </div>
+</section>
+
 
       {/* SERVICES */}
       <section id="services" className="py-24 bg-slate-50">
