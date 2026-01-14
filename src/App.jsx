@@ -148,13 +148,16 @@ export default function App() {
 </div>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-xl p-6">
-           <img
-  src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
-  className="rounded-xl"
-  alt="Advisory"
-/>
-          </div>
+         <div className="mt-12 flex justify-center">
+ <img
+  src="/images/hero-advisor.jpg"
+  alt="Independent Insurance Professional"
+  className="rounded-xl shadow-lg max-w-2xl w-full object-cover mx-auto"
+ />
+
+
+</div>
+
         </div>
       </section>
 
